@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon & Spa Appointment Booking</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("https://tse4.mm.bing.net/th?id=OIP.JFXwGeC9caINaF_9LhyBbgHaE8&pid=Api&P=0&h=180");
+            background-color:pink;
+            background-size:calc(1200px);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .form {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form">
+        <h2>Book an Appointment</h2>
+        <form action="d.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required>
+
+            <label for="Phone">Phone number:</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="Customer number" required>
+
+            <label for="salon">Choose Salon:</label>
+                <select class="form-control" id="salon">
+                    <option>Glamour Haven</option>
+                    <option>Trim & Tressess</option>
+                    <option>Barber's corner cafe</option>
+                    <option>Serenity Spa & Style</option>
+                    <option>Divine Glow Studio</option>
+                    <option>Harmony Hair Lounge</option>
+                    <option>Tranquil Tressess</option>
+                </select>
+
+            <label for="service">Select a Service:</label>
+            <select id="service" name="service" required>
+                <option value="haircut">Haircut</option>
+                <option value="hair coloring">Hair Coloring</option>
+                <option value="hair styling">Hair Styling</option>
+                <option value="massage therapy">Massage Therapy</option>
+                <option value="facial">Facial</option>
+                <option value="blow-dry">Blow-dry</option>
+                <option value="head massage">Head massage</option>
+                <option value="Waxong and Hair Removal">Waxong and Hair Removal</option>
+                <option value="Makeup Services">Makeup Services</option>
+            </select>
+
+            <label for="date">Select a Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Select a Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Book Appointment</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
